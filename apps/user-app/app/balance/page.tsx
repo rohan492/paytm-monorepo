@@ -1,6 +1,6 @@
 "use client";
 import { useBalance } from "@repo/store/useBalance";
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button";
 import Link from "next/link";
 
 export default function Comp() {
