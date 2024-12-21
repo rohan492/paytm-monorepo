@@ -10,7 +10,7 @@ jobs:
     name: Build the project
     runs-on: ubuntu-latest
     env:
-      DATABASE_URL: postgresql://postgres:rohanisthebest@localhost:5432/postgres
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
     steps:
       - uses: actions/checkout@v3
 
@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Set Environment Variables
-        run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
-
       - name: See Env
         run: echo "DB URL is $DATABASE_URL"
 
