@@ -9,7 +9,6 @@ jobs:
   build:
     name: Build the project
     runs-on: ubuntu-latest
-    environment: Monorepo
     steps:
       - uses: actions/checkout@v3
 
