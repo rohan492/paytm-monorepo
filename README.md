@@ -1,6 +1,4 @@
-# Turborepo starter
-
-This is an official starter Turborepo.
+# PayTM Monorepo
 
 ## Using this example
 
